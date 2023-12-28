@@ -1,4 +1,3 @@
-import data from '../../data/data.json';
 import css from './Statistics.module.css';
 
 const Statistics = () => (
