@@ -8,25 +8,25 @@ const Profile = ({
   stats: { followers, views, likes },
 }) => (
   <div className={css.container}>
-    <div class={css.profile}>
-      <div class={css.description}>
-        <img src={avatar} alt="User avatar" class={css.avatar} />
-        <p class={css.name}>{username}</p>
-        <p class={css.tag}>@{tag}</p>
-        <p class={css.location}>{location}</p>
+    <div className={css.profile}>
+      <div className={css.description}>
+        <img src={avatar} alt="User avatar" className={css.avatar} />
+        <p className={css.name}>{username}</p>
+        <p className={css.tag}>@{tag}</p>
+        <p className={css.location}>{location}</p>
       </div>
 
-      <ul class={css.stats}>
-        <li>
-          <span class={css.label}>Followers </span>
-          <span class={css.quantity}>{followers}</span>
+      <ul className={css.stats}>
+        <li className={css.item}>
+          <span className={css.label}>Followers </span>
+          <span className={css.quantity}>{followers}</span>
         </li>
-        <li>
-          <span class={css.label}>Views </span>
-          <span class={css.quantity}>{views}</span>
+        <li className={css.item}>
+          <span className={css.label}>Views </span>
+          <span className={css.quantity}>{views}</span>
         </li>
-        <li>
-          <span class={css.label}>Likes </span>
+        <li className={css.item}>
+          <span className={css.label}>Likes </span>
           <span class={css.quantity}>{likes}</span>
         </li>
       </ul>

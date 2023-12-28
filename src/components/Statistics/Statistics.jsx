@@ -1,18 +1,28 @@
 import css from './Statistics.module.css';
 
 const Statistics = ({ title, stats }) => (
-  <section class="statistics">
-    <h2 class="title">{title}</h2>
+  <section className={css.statistics}>
+    <h2 className={css.title}>{title}</h2>
 
-    <ul class={css.statList}>
+    <ul className={css.statList}>
       {stats.map(({ id, label, percentage }) => (
-        <li class="item" key={id}>
-          <span class={css.label}>{label} </span>
-          <span class={css.percentage}>{percentage}</span>
+        <li
+          className={css.item}
+          key={id}
+          style={{ backgroundColor: rendColor() }}
+        >
+          <span className={css.label}>{label} </span>
+          <span className={css.percentage}>{percentage} %</span>
         </li>
       ))}
     </ul>
   </section>
 );
+
+function rendColor() {
+  let color =
+    '#' + ((Math.random() * 0x1000000) | 0x1000000).toString(16).slice(1);
+  return color;
+}
 
 export default Statistics;
