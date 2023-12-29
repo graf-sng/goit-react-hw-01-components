@@ -1,0 +1,31 @@
+.friendList {
+  width: 300px;
+  margin-top: 20px;
+}
+.item {
+  display: flex;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+}
+.status {
+  display: block;
+  background-color: lightcoral;
+  margin-left: 10px;
+  margin-top: 31px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.online {
+  background-color: lightgreen;
+}
+
+.avatar {
+  margin: 10px;
+  border-radius: 6px;
+  border: 2px rebeccapurple solid;
+}
+.name {
+  font-weight: 700;
+}
